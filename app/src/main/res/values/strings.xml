@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RestApi</string>
+    <string name="placeholder_article_title">This it The Title Of The Article</string>
+    <string name="placeholder_article_body">lorem ipsum dolor sit amet in amerli tis unakri manans le mans overflowing scroll</string>
+</resources>

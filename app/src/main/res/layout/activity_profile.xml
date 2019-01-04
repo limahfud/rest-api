@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.profile.ProfileActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="200dp">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineH"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelineV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/tvProfileName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guidelineH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineH"
+            android:text="Daniel Brown"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvProfileUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/guidelineV"
+            app:layout_constraintRight_toLeftOf="@id/tvSeparator"
+            android:textColor="#ffff00"
+            app:layout_constraintTop_toBottomOf="@id/tvProfileName"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="\@Jonny" />
+
+
+        <TextView
+            android:id="@+id/tvSeparator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toRightOf="@id/tvProfileUsername"
+            app:layout_constraintRight_toLeftOf="@id/tvProfileEmail"
+            android:textColor="#ffffff"
+            app:layout_constraintTop_toBottomOf="@id/tvProfileName"
+            android:layout_marginTop="10dp"
+            android:text="|" />
+
+
+        <TextView
+            android:id="@+id/tvProfileEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="@id/guidelineV"
+            app:layout_constraintLeft_toRightOf="@id/tvSeparator"
+            android:layout_marginLeft="5dp"
+            android:textColor="#bbffffff"
+            app:layout_constraintTop_toBottomOf="@id/tvProfileName"
+            android:layout_marginTop="10dp"
+            android:text="jonny@gmail.com" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:text="Phone"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#777777"
+            android:text="087123123123"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:text="Website"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#777777"
+            android:text="www.danielbrown.com"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:text="Company"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#777777"
+            android:text="PT Dani Elbrown Utama"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:text="Address"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#777777"
+            android:text="Jl Madura No 12 Sleman"/>
+    </LinearLayout>
+
+</LinearLayout>

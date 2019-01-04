@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".activity.detail.DetailActivity">
+
+
+    <TextView
+        android:id="@+id/tvDetailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/placeholder_article_title"/>
+
+
+    <TextView
+        android:id="@+id/tvDetailBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvDetailTitle"
+        android:text="@string/placeholder_article_body"/>
+
+    <Button
+        android:id="@+id/btnDetailToProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="6dp"
+        android:background="#00000000"
+        android:text="See Author"/>
+
+</android.support.constraint.ConstraintLayout>
