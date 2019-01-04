@@ -35,7 +35,11 @@ class ListPostAdapter(var posts : List<Post>) : RecyclerView.Adapter<ListPostAda
             view.tvSinglePostBody.text = post.body
             view.setOnClickListener {
                 view.context.apply {
-                    startActivity(Intent(this, DetailActivity::class.java))
+                    val intent = Intent(this, DetailActivity::class.java)
+                    intent.putExtra("POST_ID", post.id)
+
+                    startActivity(intent)
+
                 }
             }
         }
